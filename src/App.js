@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/header'
 import Sidebar from './components/sidebar'
 import FilesView from './components/filesView/FilesView'
-import SideIcons from './components/sideIcons'
+// import SideIcons from './components/sideIcons'
 
 import GDriveLogo from './media/google-drive-logo.png'
 
@@ -10,13 +10,13 @@ import { auth, provider } from "./firebase";
 import { useState } from 'react';
 
 function App() {
-  // const [user, setUser] = useState()
+
   const [user, setUser] = useState({
-    displayName: "David Rakosi",
-    email: "david@cleverprogrammer.com",
+    displayName: "Salil Chandwadkar",
+    email: "schandwadkar31@gmail.com",
     emailVerified: true,
     phoneNumber: null,
-    photoURL: "https://lh6.googleusercontent.com/-KyLTWqvDIHQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclcWGWqkt6YUAan32YO4CSR07Y2jw/s96-c/photo.jpg"
+    photoURL: "https://cdn.icon-icons.com/icons2/2248/PNG/512/cat_icon_138789.png"
   })
 
   const handleLogin = () => {
@@ -43,15 +43,15 @@ function App() {
             <div className="app__main">
               <Sidebar />
               <FilesView />
-              <SideIcons />
+              {/* <SideIcons /> */}
             </div>
           </>
         ) : (
-            <div className='app__login'>
-              <img src={GDriveLogo} alt="Google Drive" />
-              <button onClick={handleLogin}>Log in to Google Drive</button>
-            </div>
-          )
+              <div className='app__login'>
+                <img src={GDriveLogo} alt="Google Drive" />
+                <button onClick={handleLogin}>Log in to Google Drive</button>
+              </div>
+            )
       }
     </div>
   );

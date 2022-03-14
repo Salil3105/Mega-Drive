@@ -1,21 +1,22 @@
 import React from 'react'
 import '../../styles/Header.css'
 
-import GDriveLogo from '../../media/google-drive-logo.png'
+// import GDriveLogo from '../../media/google-drive-logo.png'
+import fileManager from '../../media/file_manager.jpg'
 
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import SettingsIcon from '@material-ui/icons/Settings';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+// import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import AppsIcon from '@material-ui/icons/Apps';
 
 const index = ({ userPhoto }) => {
     return (
         <div className='header'>
             <div className="header__logo">
-                <img src={GDriveLogo} alt="Google Drive" />
-                <span>Drive</span>
+                <img src={fileManager} alt="Google Drive" />
+                <span>Mega Drive</span>
             </div>
             <div className="header__searchContainer">
                 <div className="header__searchBar">
